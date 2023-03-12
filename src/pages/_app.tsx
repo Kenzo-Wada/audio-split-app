@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles'
 import useDefaultTheme from '../hooks/useDefaultTheme'
 
 export default function App({ Component, pageProps }: AppProps) {
-  const theme = createTheme({
+  const theme = createTheme({ //FIXME: useDefaultTheme()を反映させたい
     palette: {
       mode: "light",
       primary: {
