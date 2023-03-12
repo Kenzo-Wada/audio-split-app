@@ -1,3 +1,7 @@
+import useDefaultTheme from '../hooks/useDefaultTheme'
+import ThemeProvider from '@mui/system/ThemeProvider';
+import CssBaseline from '@mui/material/CssBaseline';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +11,14 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+  (Story) => {
+    return (
+    <ThemeProvider theme={useDefaultTheme()}>
+      <CssBaseline />
+      <Story />
+    </ThemeProvider>
+    );
+  },
+]

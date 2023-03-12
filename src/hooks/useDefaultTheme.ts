@@ -1,4 +1,4 @@
-import createTheme  from "@mui/system/createTheme"
+import createTheme from "@mui/material/styles/createTheme"
 
 const useDefaultTheme = () => {
   const theme = createTheme({
@@ -9,7 +9,6 @@ const useDefaultTheme = () => {
       },
     },
   })
-
   return theme
 }
 
