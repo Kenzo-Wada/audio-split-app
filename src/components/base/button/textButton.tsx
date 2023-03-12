@@ -17,4 +17,6 @@ const TextButton = memo((props: Props) => {
   );
 });
 
+TextButton.displayName = 'TextButton';
+
 export default TextButton;

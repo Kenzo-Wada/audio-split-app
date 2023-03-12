@@ -17,4 +17,6 @@ const OutlinedButton = memo((props: Props) => {
   );
 });
 
+OutlinedButton.displayName = 'OutlinedButton';
+
 export default OutlinedButton;
