@@ -1,7 +1,6 @@
 import Button from '@mui/material/Button';
 import {memo, ReactNode} from 'react';
 import styled  from '@mui/system/styled';
-import { display } from '@mui/system';
 
 interface Props {
   children: ReactNode;
