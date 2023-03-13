@@ -1,4 +1,4 @@
-import createTheme from "@mui/material/styles/createTheme"
+import {createTheme, Shadows} from "@mui/material/styles"
 
 const useDefaultTheme = () => {
   const theme = createTheme({
@@ -8,6 +8,7 @@ const useDefaultTheme = () => {
         main: "#0f83fd",
       },
     },
+    shadows: Array(25).fill("none") as Shadows,
   })
   return theme
 }
