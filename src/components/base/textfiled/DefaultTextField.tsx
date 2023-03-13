@@ -23,4 +23,3 @@ const DefaultTextField = memo((props: Props) => {
 DefaultTextField.displayName = "DefaultTextField";
 
 export default DefaultTextField;
-
