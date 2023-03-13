@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         main: "#0f83fd",
       },
     },
+    shadows: "none"
   })
 
   return (
