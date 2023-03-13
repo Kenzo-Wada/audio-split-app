@@ -1,8 +1,9 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import "@/styles/globals.css"
 
-import useDefaultTheme from '../hooks/useDefaultTheme'
+import Header from '@/components/base/header/Header'
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = createTheme({ //FIXME: useDefaultTheme()を反映させたい
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main>
         <ThemeProvider theme={theme}>
+          <Header>Audio Split</Header>
           <Component {...pageProps} />
         </ThemeProvider>
       </main>
