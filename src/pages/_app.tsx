@@ -1,4 +1,4 @@
-import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { createTheme, Shadows, ThemeProvider } from '@mui/material/styles'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import "@/styles/globals.css"
@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         main: "#0f83fd",
       },
     },
-    shadows: "none"
+    shadows: Array(25).fill("none") as Shadows,
   })
 
   return (
