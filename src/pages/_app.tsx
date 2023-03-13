@@ -1,6 +1,7 @@
-import Head from 'next/head'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 import type { AppProps } from 'next/app'
-import { ThemeProvider, createTheme } from '@mui/material/styles'
+import Head from 'next/head'
+
 import useDefaultTheme from '../hooks/useDefaultTheme'
 
 export default function App({ Component, pageProps }: AppProps) {
