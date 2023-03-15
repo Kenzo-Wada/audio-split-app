@@ -1,20 +1,11 @@
 import Button from '@mui/material/Button';
-import styled  from '@mui/system/styled';
-import {memo, ReactNode} from 'react';
+import type { ButtonProps as MUIButtonProps } from '@mui/material/Button';
+import { memo } from 'react';
 
-interface Props {
-  children: ReactNode;
-}
+type ButtonProps = MUIButtonProps;
 
-const StyledButton = styled(Button)({
-});
-
-const ContainedButton = memo((props: Props) => {
-  const {children} = props;
-
-  return (
-    <StyledButton variant="contained">{children}</StyledButton>
-  );
+const ContainedButton = memo((props: ButtonProps) => {
+  return <Button variant="contained" {...props} />;
 });
 
 ContainedButton.displayName = 'ContainedButton';

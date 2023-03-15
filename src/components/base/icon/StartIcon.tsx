@@ -1,12 +1,11 @@
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import { memo } from 'react';
 
-interface Props {
-}
+interface Props {}
 
 const StartIcon = memo((props: Props) => {
   return <PlayArrowRoundedIcon />;
-})
+});
 
 StartIcon.displayName = 'StartIcon';
 

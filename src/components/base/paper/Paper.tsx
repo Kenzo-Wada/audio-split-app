@@ -5,8 +5,8 @@ import { memo } from 'react';
 type PaperProps = MUIPaperProps;
 
 const Paper = memo((props: PaperProps) => {
-  return <MUIPaper {...props}/>;
-})
+  return <MUIPaper {...props} />;
+});
 
 Paper.displayName = 'Paper';
 
