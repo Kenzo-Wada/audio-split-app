@@ -1,5 +1,5 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals","next/babel", "prettier"],
 	"plugins": ["import", "prettier", "no-relative-import-paths"],
   "rules": {
 		"no-relative-import-paths/no-relative-import-paths": [
