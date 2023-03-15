@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   "typescript" : { reactDocgen: false },
   "stories": [
@@ -15,5 +17,9 @@ module.exports = {
   },
   features: {
     emotionAlias: false,
+  },
+  webpackFinal: async (config, { configType }) => {
+    config.resolve.alias['~'] = path.resolve(__dirname, '../');
+    return config;
   },
 }
