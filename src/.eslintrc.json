@@ -1,5 +1,5 @@
 {
-  "extends": ["next/core-web-vitals","next/babel", "prettier"],
+  "extends": ["next/core-web-vitals","next", "prettier"],
 	"plugins": ["import", "prettier", "no-relative-import-paths"],
   "rules": {
 		"@typescript-eslint/consistent-type-imports": "error",
