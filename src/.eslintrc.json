@@ -1,6 +1,15 @@
 {
   "extends": "next/core-web-vitals",
+	"plugins": ["import", "prettier", "no-relative-import-paths"],
   "rules": {
+		"no-relative-import-paths/no-relative-import-paths": [
+      "error",
+			{
+				"allowSameFolder": false,
+				"rootDir": "~/"
+			}
+		],
+		"prettier/prettier": "error",
     "sort-imports": [
 			"error",
 			{ "ignoreCase": true, "ignoreDeclarationSort": true }
