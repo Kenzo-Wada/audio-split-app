@@ -2,6 +2,7 @@
   "extends": ["next/core-web-vitals","next/babel", "prettier"],
 	"plugins": ["import", "prettier", "no-relative-import-paths"],
   "rules": {
+		"@typescript-eslint/consistent-type-imports": "error",
 		"no-relative-import-paths/no-relative-import-paths": [
       "error",
 			{
