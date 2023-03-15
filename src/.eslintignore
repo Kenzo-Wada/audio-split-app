@@ -1,0 +1,6 @@
+node_modules
+
+# nextjs
+.next
+dist
+out
