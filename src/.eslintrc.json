@@ -1,6 +1,18 @@
 {
-  "extends": ["next/core-web-vitals","next", "prettier"],
-	"plugins": ["import", "prettier", "no-relative-import-paths"],
+  "extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"prettier",
+		"next",
+		"next/core-web-vitals"
+	],
+	"plugins": [
+		"import",
+		"@typescript-eslint",
+		"react"
+	],
   "rules": {
 		"@typescript-eslint/consistent-type-imports": "error",
 		"no-relative-import-paths/no-relative-import-paths": [
@@ -10,7 +22,6 @@
 				"rootDir": "~/"
 			}
 		],
-		"prettier/prettier": "error",
     "sort-imports": [
 			"error",
 			{ "ignoreCase": true, "ignoreDeclarationSort": true }
