@@ -1,7 +1,7 @@
-import {createTheme, Shadows} from "@mui/material/styles"
+import {createTheme} from "@mui/material/styles";
+import type { Shadows} from "@mui/material/styles"
 
-const useDefaultTheme = () => {
-  const theme = createTheme({
+const useDefaultTheme = createTheme({
     palette: {
       mode: "light",
       primary: {
@@ -10,7 +10,6 @@ const useDefaultTheme = () => {
     },
     shadows: Array(25).fill("none") as Shadows,
   })
-  return theme
-}
+
 
 export default useDefaultTheme

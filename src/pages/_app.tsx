@@ -1,21 +1,13 @@
-import type { Shadows} from '@mui/material/styles';
-import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { ThemeProvider } from '@mui/material/styles'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import "~/styles/globals.css"
 
 import Header from '~/components/base/header/Header'
+import useDefaultTheme from '~/hooks/useDefaultTheme';
 
 export default function App({ Component, pageProps }: AppProps) {
-  const theme = createTheme({ //FIXME: useDefaultTheme()を反映させたい
-    palette: {
-      mode: "light",
-      primary: {
-        main: "#0f83fd",
-      },
-    },
-    shadows: Array(25).fill("none") as Shadows,
-  })
+  const theme = useDefaultTheme;
 
   return (
     <>
