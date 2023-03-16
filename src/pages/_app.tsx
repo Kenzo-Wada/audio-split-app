@@ -2,7 +2,7 @@ import type { Shadows} from '@mui/material/styles';
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import "@/styles/globals.css"
+import "~/styles/globals.css"
 
 import Header from '~/components/base/header/Header'
 
