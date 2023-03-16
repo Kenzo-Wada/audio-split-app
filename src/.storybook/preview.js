@@ -1,4 +1,4 @@
-import useDefaultTheme from '../hooks/useDefaultTheme'
+import useDefaultTheme from '../theme/useDefaultTheme'
 import ThemeProvider from '@mui/system/ThemeProvider';
 
 export const parameters = {

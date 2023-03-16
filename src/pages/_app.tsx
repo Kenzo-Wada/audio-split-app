@@ -4,7 +4,7 @@ import Head from 'next/head'
 import "~/styles/globals.css"
 
 import Header from '~/components/base/header/Header'
-import useDefaultTheme from '~/hooks/useDefaultTheme';
+import useDefaultTheme from '~/theme/useDefaultTheme';
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = useDefaultTheme;

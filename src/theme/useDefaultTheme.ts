@@ -9,7 +9,15 @@ const useDefaultTheme = createTheme({
       },
     },
     shadows: Array(25).fill("none") as Shadows,
+    components: {
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            padding: '16px'
+          },  
+        },
+      },
+    },
   })
-
 
 export default useDefaultTheme
