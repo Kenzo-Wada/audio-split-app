@@ -10,4 +10,4 @@ services:
     command: sh -c "npm run dev"
     ports:
       - "3000:3000"
-      - "6006:6006"
+      - "5432:5432"
