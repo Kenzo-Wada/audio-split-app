@@ -1,6 +1,7 @@
 import TextField from '@mui/material/TextField';
 import styled from '@mui/system/styled';
-import { CSSProperties, memo } from 'react';
+import type { CSSProperties} from 'react';
+import { memo } from 'react';
 
 const StyledTextField = styled(TextField)((props) => ({
   label: props.label,

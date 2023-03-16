@@ -10,7 +10,8 @@
 	"plugins": [
 		"import",
 		"@typescript-eslint",
-		"react"
+		"react",
+		"no-relative-import-paths"
 	],
   "rules": {
 		"@typescript-eslint/consistent-type-imports": "error",

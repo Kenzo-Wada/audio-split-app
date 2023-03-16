@@ -1,13 +1,11 @@
 import Slider from '@mui/material/Slider';
-import styled from '@mui/system/styled';
+import type { SliderProps as MUISliderProps } from '@mui/material/Slider';
 import { memo } from 'react';
 
-interface Props {}
+type SliderProps = MUISliderProps;
 
-const StyledSlider = styled(Slider)({});
-
-const DefaultSlider = memo((props: Props) => {
-  return <StyledSlider />;
+const DefaultSlider = memo((props: SliderProps) => {
+  return <Slider {...props}/>;
 });
 
 DefaultSlider.displayName = 'DefaultSlider';
